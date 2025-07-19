@@ -558,7 +558,7 @@ body{
 }
 
 .footer{
-    max-width: 1280px;
+    max-width: 1180px;
     padding: 1rem;
     text-align: left;
     display: flex;
@@ -571,13 +571,14 @@ body{
 
 .logo-svg{
     width: 1.7rem;
-    height: 6rem;
+    height: 2rem;
 }
 
 .comp-logo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 1rem;
 }
 
 .logo-link{
@@ -589,5 +590,13 @@ body{
     font-weight: bold;
 }
 
+.social{
+    display: flex;
+    gap: 1rem;
+}
 
-
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
