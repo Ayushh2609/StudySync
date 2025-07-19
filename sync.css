@@ -579,13 +579,14 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
+    padding: 2rem 1rem;
 }
 
 .logo-link{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.8;
+    gap: 0.8rem ;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -598,5 +599,55 @@ body{
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    gap: 8rem;
+    padding: 2rem 1rem;
 }
+
+.footer-grid-heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    margin-bottom: 1.2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.footer-link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-link{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.footer-link:hover{
+    color: var(--link-color);
+}
+
+.social-icon {
+    border-radius: 5px; /* or any px value, like 8px */
+    overflow: hidden;   /* ensures shadow doesn't spill awkwardly */
+    transition: box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* use alpha < 1 */
+    background-color: var(--light-gray);
+}
+
+
+.footer-copyright{
+    color: var(--dark-gray);
+    font-size: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray);
+}
+
+
